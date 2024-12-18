@@ -21,7 +21,37 @@
 		F1FF9E572D134AEE0063DF29 /* ApiEmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E472D134AEE0063DF29 /* ApiEmptyResponse.swift */; };
 		F1FF9E582D134AEE0063DF29 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E4A2D134AEE0063DF29 /* ApiProvider.swift */; };
 		F1FF9E592D134AEE0063DF29 /* ApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E4B2D134AEE0063DF29 /* ApiWorker.swift */; };
+		F1FF9E722D135F7F0063DF29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E6F2D135F7F0063DF29 /* ContentView.swift */; };
+		F1FF9E732D135F7F0063DF29 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E702D135F7F0063DF29 /* SampleApp.swift */; };
+		F1FF9E742D135F7F0063DF29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FF9E6C2D135F7F0063DF29 /* Preview Assets.xcassets */; };
+		F1FF9E752D135F7F0063DF29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FF9E6E2D135F7F0063DF29 /* Assets.xcassets */; };
+		F1FF9E772D135FE90063DF29 /* SharpnezCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1FF9DFC2D134A4F0063DF29 /* SharpnezCloud.framework */; };
+		F1FF9E782D135FE90063DF29 /* SharpnezCloud.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F1FF9DFC2D134A4F0063DF29 /* SharpnezCloud.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1FF9E792D135FE90063DF29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1FF9DF32D134A4F0063DF29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1FF9DFB2D134A4F0063DF29;
+			remoteInfo = SharpnezCloud;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F1FF9E7B2D135FE90063DF29 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F1FF9E782D135FE90063DF29 /* SharpnezCloud.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F1FF9DFC2D134A4F0063DF29 /* SharpnezCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharpnezCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +69,11 @@
 		F1FF9E472D134AEE0063DF29 /* ApiEmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEmptyResponse.swift; sourceTree = "<group>"; };
 		F1FF9E4A2D134AEE0063DF29 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
 		F1FF9E4B2D134AEE0063DF29 /* ApiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiWorker.swift; sourceTree = "<group>"; };
+		F1FF9E5E2D135F740063DF29 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FF9E6C2D135F7F0063DF29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F1FF9E6E2D135F7F0063DF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1FF9E6F2D135F7F0063DF29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F1FF9E702D135F7F0063DF29 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +84,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1FF9E5B2D135F740063DF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FF9E772D135FE90063DF29 /* SharpnezCloud.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,6 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				F1FF9E0B2D134A5C0063DF29 /* SharpnezCloud */,
+				F1FF9E712D135F7F0063DF29 /* Sample */,
+				F1FF9E762D135FE90063DF29 /* Frameworks */,
 				F1FF9DFD2D134A4F0063DF29 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				F1FF9DFC2D134A4F0063DF29 /* SharpnezCloud.framework */,
+				F1FF9E5E2D135F740063DF29 /* Sample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -169,6 +215,32 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		F1FF9E6D2D135F7F0063DF29 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E6C2D135F7F0063DF29 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F1FF9E712D135F7F0063DF29 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E6D2D135F7F0063DF29 /* Preview Content */,
+				F1FF9E6E2D135F7F0063DF29 /* Assets.xcassets */,
+				F1FF9E6F2D135F7F0063DF29 /* ContentView.swift */,
+				F1FF9E702D135F7F0063DF29 /* SampleApp.swift */,
+			);
+			path = Sample;
+			sourceTree = "<group>";
+		};
+		F1FF9E762D135FE90063DF29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -203,6 +275,27 @@
 			productReference = F1FF9DFC2D134A4F0063DF29 /* SharpnezCloud.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		F1FF9E5D2D135F740063DF29 /* Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FF9E692D135F750063DF29 /* Build configuration list for PBXNativeTarget "Sample" */;
+			buildPhases = (
+				F1FF9E5A2D135F740063DF29 /* Sources */,
+				F1FF9E5B2D135F740063DF29 /* Frameworks */,
+				F1FF9E5C2D135F740063DF29 /* Resources */,
+				F1FF9E7B2D135FE90063DF29 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1FF9E7A2D135FE90063DF29 /* PBXTargetDependency */,
+			);
+			name = Sample;
+			packageProductDependencies = (
+			);
+			productName = Sample;
+			productReference = F1FF9E5E2D135F740063DF29 /* Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,9 +303,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					F1FF9DFB2D134A4F0063DF29 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					F1FF9E5D2D135F740063DF29 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -232,6 +329,7 @@
 			projectRoot = "";
 			targets = (
 				F1FF9DFB2D134A4F0063DF29 /* SharpnezCloud */,
+				F1FF9E5D2D135F740063DF29 /* Sample */,
 			);
 		};
 /* End PBXProject section */
@@ -241,6 +339,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1FF9E5C2D135F740063DF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FF9E742D135F7F0063DF29 /* Preview Assets.xcassets in Resources */,
+				F1FF9E752D135F7F0063DF29 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +374,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F1FF9E5A2D135F740063DF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FF9E722D135F7F0063DF29 /* ContentView.swift in Sources */,
+				F1FF9E732D135F7F0063DF29 /* SampleApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1FF9E7A2D135FE90063DF29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1FF9DFB2D134A4F0063DF29 /* SharpnezCloud */;
+			targetProxy = F1FF9E792D135FE90063DF29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F1FF9E052D134A4F0063DF29 /* Debug */ = {
@@ -472,6 +596,67 @@
 			};
 			name = Release;
 		};
+		F1FF9E6A2D135F750063DF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tiagolinhares.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F1FF9E6B2D135F750063DF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sample/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = tiagolinhares.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -489,6 +674,15 @@
 			buildConfigurations = (
 				F1FF9E052D134A4F0063DF29 /* Debug */,
 				F1FF9E062D134A4F0063DF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FF9E692D135F750063DF29 /* Build configuration list for PBXNativeTarget "Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FF9E6A2D135F750063DF29 /* Debug */,
+				F1FF9E6B2D135F750063DF29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
