@@ -1,16 +1,16 @@
 //
-//  HTTPMethod.swift
-//  SDKCloud
+//  SHCloudHTTPMethod.swift
+//  SharpnezCloud
 //
 //  Created by Tiago Linhares on 05/07/23.
 //
 
 import Foundation
 
-// MARK: - HTTPMethod
+// MARK: - SHCloudHTTPMethod
 
 /// HTTP Methods.
-public enum HTTPMethod: String {
+public enum SHCloudHTTPMethod: String {
     
     /// GET Method.
     case get = "GET"

@@ -44,8 +44,8 @@ struct ContentView: View {
     }
     
     private func makeRequest() async {
-        let worker = ApiWorker()
-        let request = ApiRequest(
+        let worker = SHCloudWorker()
+        let request = SHCloudRequest(
             method: .post,
             endpoint: "/user/create",
             headers: ["apiKey": "7690a974-2a7b-48bb-8a01-97aec5b5e89d"],

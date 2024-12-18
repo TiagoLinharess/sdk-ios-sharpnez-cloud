@@ -1,25 +1,25 @@
 //
 //  ApiProvider.swift
-//  SDKCloud
+//  SharpnezCloud
 //
 //  Created by Tiago Linhares on 04/07/23.
 //
 
 import Foundation
 
-// MARK: - ApiProviderInput
+// MARK: - SHCloudProviderProtocol
 
-/// ApiProvider Protocol.
-public protocol ApiProviderInput {
+/// SHCloudProvider Protocol.
+public protocol SHCloudProviderProtocol {
     
     /// Perform HTTP request provider.
-    func callMethod(request: ApiRequestInput) async throws -> Data
+    func callMethod(request: SHCloudRequestProtocol) async throws -> Data
 }
 
-// MARK: - ApiProvider
+// MARK: - SHCloudProvider
 
-/// ApiProvider.
-public final class ApiProvider {
+/// SHCloudProvider.
+public final class SHCloudProvider {
     
     // MARK: - Public Init
     
@@ -27,37 +27,37 @@ public final class ApiProvider {
     public init() {}
 }
 
-extension ApiProvider: ApiProviderInput {
+extension SHCloudProvider: SHCloudProviderProtocol {
     
     // MARK: - Provider Request
     
     /// Perform HTTP request provider.
-    public func callMethod(request: ApiRequestInput) async throws -> Data {
+    public func callMethod(request: SHCloudRequestProtocol) async throws -> Data {
         let urlRequest = try getURL(request: request)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
         
         guard let statusCode = (response as? HTTPURLResponse)?.statusCode else {
-            throw ApiError.customError(CloudConstants.Provider.noResponseFromServer)
+            throw SHCloudError.customError(CloudConstants.Provider.noResponseFromServer)
         }
         
         guard statusCode >= CloudConstants.Provider.successStatusCode &&
               statusCode < CloudConstants.Provider.errorStatusCode
-        else { throw ApiError.httpError(data, statusCode) }
+        else { throw SHCloudError.httpError(data, statusCode) }
         
         return data
     }
 }
 
-private extension ApiProvider {
+private extension SHCloudProvider {
     
     // MARK: - Build URL
     
     /// Get URL request
-    func getURL(request: ApiRequestInput) throws -> URLRequest {
-        guard let urlString = SDKCloudConfiguration.shared.baseUrl,
+    func getURL(request: SHCloudRequestProtocol) throws -> URLRequest {
+        guard let urlString = SHCloudConfiguration.shared?.getBaseURL(),
               let url = URL(string: urlString + request.endpoint)
         else {
-            throw ApiError.customError(CloudConstants.Provider.noAvailableURL)
+            throw SHCloudError.customError(CloudConstants.Provider.noAvailableURL)
         }
         
         var urlRequest = URLRequest(url: url)

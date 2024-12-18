@@ -14,7 +14,7 @@ struct SampleApp: App {
         WindowGroup {
             ContentView()
                 .onAppear {
-                    SDKCloudConfiguration.shared.baseUrl = "https://1y60o.wiremockapi.cloud"
+                    SHCloudConfiguration.start(baseURL: "https://1y60o.wiremockapi.cloud")
                 }
         }
     }

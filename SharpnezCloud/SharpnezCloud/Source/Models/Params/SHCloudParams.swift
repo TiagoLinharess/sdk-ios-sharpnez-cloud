@@ -1,5 +1,5 @@
 //
-//  ApiParams.swift
+//  SHCloudParams.swift
 //  SDKCore
 //
 //  Created by Tiago Linhares on 04/07/23.
@@ -7,10 +7,10 @@
 
 import Foundation
 
-// MARK: - ApiParams
+// MARK: - SHCloudParams
 
 /// Object that creates the HTTP query params.
-enum ApiParams {
+enum SHCloudParams {
     
     // MARK: - Public Static Method
     

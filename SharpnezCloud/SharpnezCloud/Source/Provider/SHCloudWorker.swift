@@ -1,54 +1,54 @@
 //
-//  ApiWorker.swift
-//  SDKCloud
+//  SHCloudWorker.swift
+//  SharpnezCloud
 //
 //  Created by Tiago Linhares on 04/07/23.
 //
 
 import Foundation
 
-// MARK: - ApiWorkerInput
+// MARK: - SHCloudWorkerProvider
 
 /// Worker Protocol.
-public protocol ApiWorkerInput {
+public protocol SHCloudWorkerProvider {
     
     // MARK: - Protocol Mehtods
     
     /// Perform request.
-    func perform<Response: Decodable>(_ type: Response.Type, request: ApiRequestInput) async throws -> Response
+    func perform<Response: Decodable>(_ type: Response.Type, request: SHCloudRequestProtocol) async throws -> Response
 }
 
-// MARK: - ApiWorker
+// MARK: - SHCloudWorker
 
 /// Object thats perform request.
-public final class ApiWorker: NSObject {
+public final class SHCloudWorker: NSObject {
     
     // MARK: - Properties
     
     /// Request provider.
-    private let apiProvider: ApiProviderInput
+    private let apiProvider: SHCloudProviderProtocol
     
     // MARK: - Public Init
     
     /// Initialize.
     public override init() {
-        self.apiProvider = ApiProvider()
+        self.apiProvider = SHCloudProvider()
     }
     
     // MARK: - Init
     
     /// Initialize.
-    init(apiProvider: ApiProviderInput = ApiProvider()) {
+    init(apiProvider: SHCloudProviderProtocol = SHCloudProvider()) {
         self.apiProvider = apiProvider
     }
 }
 
-extension ApiWorker: ApiWorkerInput {
+extension SHCloudWorker: SHCloudWorkerProvider {
     
     // MARK: - Request
     
     /// Perform request.
-    public func perform<Response: Decodable>(_ type: Response.Type, request: ApiRequestInput) async throws -> Response {
+    public func perform<Response: Decodable>(_ type: Response.Type, request: SHCloudRequestProtocol) async throws -> Response {
         let data = try await apiProvider.callMethod(request: request)
         let response = try JSONDecoder().decode(Response.self, from: data)
         return response

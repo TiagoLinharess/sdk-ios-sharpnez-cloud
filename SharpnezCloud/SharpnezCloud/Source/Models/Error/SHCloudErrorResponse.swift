@@ -1,16 +1,16 @@
 //
-//  HttpErrorResponse.swift
-//  SDKCloud
+//  SHCloudErrorResponse.swift
+//  SharpnezCloud
 //
 //  Created by Tiago Linhares on 05/07/23.
 //
 
 import Foundation
 
-// MARK: - HttpErrorResponse
+// MARK: - SHCloudErrorResponse
 
 /// This is a object thats recieve a generic type "T", witch handle the object error from provider.
-public struct HttpErrorResponse<T: Decodable> {
+public struct SHCloudErrorResponse<T: Decodable> {
     
     // MARK: - Public Properties
     

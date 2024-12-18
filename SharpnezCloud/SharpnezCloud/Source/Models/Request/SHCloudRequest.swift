@@ -1,16 +1,16 @@
 //
-//  ApiRequest.swift
-//  SDKCloud
+//  SHCloudRequest.swift
+//  SharpnezCloud
 //
 //  Created by Tiago Linhares on 04/07/23.
 //
 
 import Foundation
 
-// MARK: - ApiRequestInput
+// MARK: - SHCloudRequestProtocol
 
-/// ApiRequest protocol.
-public protocol ApiRequestInput {
+/// SHCloudRequest protocol.
+public protocol SHCloudRequestProtocol {
     
     // MARK: - Protocol Properties
     
@@ -18,7 +18,7 @@ public protocol ApiRequestInput {
     var endpoint: String { get }
     
     /// HTTP Method.
-    var method: HTTPMethod { get }
+    var method: SHCloudHTTPMethod { get }
     
     /// Request Headers.
     var headers: [String: String]? { get }
@@ -30,10 +30,10 @@ public protocol ApiRequestInput {
     var requestBody: Data? { get }
 }
 
-// MARK: - ApiRequestInput
+// MARK: - SHCloudRequest
 
-/// ApiRequest object.
-public struct ApiRequest<T: Encodable>: ApiRequestInput {
+/// SHCloudRequest object.
+public struct SHCloudRequest<T: Encodable>: SHCloudRequestProtocol {
     
     // MARK: - Public Properties
     
@@ -41,7 +41,7 @@ public struct ApiRequest<T: Encodable>: ApiRequestInput {
     public let endpoint: String
     
     /// HTTP Method.
-    public let method: HTTPMethod
+    public let method: SHCloudHTTPMethod
     
     /// Request Headers.
     public let headers: [String: String]?
@@ -54,13 +54,13 @@ public struct ApiRequest<T: Encodable>: ApiRequestInput {
     
     // MARK: - Init
     
-    public init(method: HTTPMethod, endpoint: String, headers: [String: String]?, data: T?) {
+    public init(method: SHCloudHTTPMethod, endpoint: String, headers: [String: String]?, data: T?) {
         let requestData = try? JSONEncoder().encode(data)
         
         self.method = method
         self.endpoint = endpoint
         self.headers = headers
-        self.requestParams = ApiParams.getUrlParamsFromData(data: requestData)
+        self.requestParams = SHCloudParams.getUrlParamsFromData(data: requestData)
         self.requestBody = requestData
     }
 }

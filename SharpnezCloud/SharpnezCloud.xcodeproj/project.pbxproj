@@ -10,17 +10,17 @@
 		F1FF9E372D134AEB0063DF29 /* SharpnezCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = F1FF9E342D134AEB0063DF29 /* SharpnezCloud.h */; };
 		F1FF9E382D134AEB0063DF29 /* SharpnezCloud.docc in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E352D134AEB0063DF29 /* SharpnezCloud.docc */; };
 		F1FF9E4E2D134AEE0063DF29 /* CloudConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E392D134AEE0063DF29 /* CloudConstants.swift */; };
-		F1FF9E4F2D134AEE0063DF29 /* SDKCloudConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3B2D134AEE0063DF29 /* SDKCloudConfiguration.swift */; };
-		F1FF9E502D134AEE0063DF29 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3D2D134AEE0063DF29 /* ApiError.swift */; };
+		F1FF9E4F2D134AEE0063DF29 /* SHCloudConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3B2D134AEE0063DF29 /* SHCloudConfiguration.swift */; };
+		F1FF9E502D134AEE0063DF29 /* SHCloudError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3D2D134AEE0063DF29 /* SHCloudError.swift */; };
 		F1FF9E512D134AEE0063DF29 /* Error+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3E2D134AEE0063DF29 /* Error+extensions.swift */; };
-		F1FF9E522D134AEE0063DF29 /* HttpErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3F2D134AEE0063DF29 /* HttpErrorResponse.swift */; };
-		F1FF9E532D134AEE0063DF29 /* ApiParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E412D134AEE0063DF29 /* ApiParams.swift */; };
-		F1FF9E542D134AEE0063DF29 /* ApiEmptyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E432D134AEE0063DF29 /* ApiEmptyRequest.swift */; };
-		F1FF9E552D134AEE0063DF29 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E442D134AEE0063DF29 /* ApiRequest.swift */; };
-		F1FF9E562D134AEE0063DF29 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E452D134AEE0063DF29 /* HTTPMethod.swift */; };
-		F1FF9E572D134AEE0063DF29 /* ApiEmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E472D134AEE0063DF29 /* ApiEmptyResponse.swift */; };
-		F1FF9E582D134AEE0063DF29 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E4A2D134AEE0063DF29 /* ApiProvider.swift */; };
-		F1FF9E592D134AEE0063DF29 /* ApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E4B2D134AEE0063DF29 /* ApiWorker.swift */; };
+		F1FF9E522D134AEE0063DF29 /* SHCloudErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3F2D134AEE0063DF29 /* SHCloudErrorResponse.swift */; };
+		F1FF9E532D134AEE0063DF29 /* SHCloudParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E412D134AEE0063DF29 /* SHCloudParams.swift */; };
+		F1FF9E542D134AEE0063DF29 /* SHCloudEmptyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E432D134AEE0063DF29 /* SHCloudEmptyRequest.swift */; };
+		F1FF9E552D134AEE0063DF29 /* SHCloudRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E442D134AEE0063DF29 /* SHCloudRequest.swift */; };
+		F1FF9E562D134AEE0063DF29 /* SHCloudHTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E452D134AEE0063DF29 /* SHCloudHTTPMethod.swift */; };
+		F1FF9E572D134AEE0063DF29 /* SHCloundEmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E472D134AEE0063DF29 /* SHCloundEmptyResponse.swift */; };
+		F1FF9E582D134AEE0063DF29 /* SHCloudProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E4A2D134AEE0063DF29 /* SHCloudProvider.swift */; };
+		F1FF9E592D134AEE0063DF29 /* SHCloudWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E4B2D134AEE0063DF29 /* SHCloudWorker.swift */; };
 		F1FF9E722D135F7F0063DF29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E6F2D135F7F0063DF29 /* ContentView.swift */; };
 		F1FF9E732D135F7F0063DF29 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E702D135F7F0063DF29 /* SampleApp.swift */; };
 		F1FF9E742D135F7F0063DF29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1FF9E6C2D135F7F0063DF29 /* Preview Assets.xcassets */; };
@@ -58,17 +58,17 @@
 		F1FF9E342D134AEB0063DF29 /* SharpnezCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharpnezCloud.h; sourceTree = "<group>"; };
 		F1FF9E352D134AEB0063DF29 /* SharpnezCloud.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SharpnezCloud.docc; sourceTree = "<group>"; };
 		F1FF9E392D134AEE0063DF29 /* CloudConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudConstants.swift; sourceTree = "<group>"; };
-		F1FF9E3B2D134AEE0063DF29 /* SDKCloudConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCloudConfiguration.swift; sourceTree = "<group>"; };
-		F1FF9E3D2D134AEE0063DF29 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F1FF9E3B2D134AEE0063DF29 /* SHCloudConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudConfiguration.swift; sourceTree = "<group>"; };
+		F1FF9E3D2D134AEE0063DF29 /* SHCloudError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudError.swift; sourceTree = "<group>"; };
 		F1FF9E3E2D134AEE0063DF29 /* Error+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+extensions.swift"; sourceTree = "<group>"; };
-		F1FF9E3F2D134AEE0063DF29 /* HttpErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrorResponse.swift; sourceTree = "<group>"; };
-		F1FF9E412D134AEE0063DF29 /* ApiParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiParams.swift; sourceTree = "<group>"; };
-		F1FF9E432D134AEE0063DF29 /* ApiEmptyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEmptyRequest.swift; sourceTree = "<group>"; };
-		F1FF9E442D134AEE0063DF29 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
-		F1FF9E452D134AEE0063DF29 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		F1FF9E472D134AEE0063DF29 /* ApiEmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEmptyResponse.swift; sourceTree = "<group>"; };
-		F1FF9E4A2D134AEE0063DF29 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
-		F1FF9E4B2D134AEE0063DF29 /* ApiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiWorker.swift; sourceTree = "<group>"; };
+		F1FF9E3F2D134AEE0063DF29 /* SHCloudErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudErrorResponse.swift; sourceTree = "<group>"; };
+		F1FF9E412D134AEE0063DF29 /* SHCloudParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudParams.swift; sourceTree = "<group>"; };
+		F1FF9E432D134AEE0063DF29 /* SHCloudEmptyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudEmptyRequest.swift; sourceTree = "<group>"; };
+		F1FF9E442D134AEE0063DF29 /* SHCloudRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudRequest.swift; sourceTree = "<group>"; };
+		F1FF9E452D134AEE0063DF29 /* SHCloudHTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudHTTPMethod.swift; sourceTree = "<group>"; };
+		F1FF9E472D134AEE0063DF29 /* SHCloundEmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloundEmptyResponse.swift; sourceTree = "<group>"; };
+		F1FF9E4A2D134AEE0063DF29 /* SHCloudProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudProvider.swift; sourceTree = "<group>"; };
+		F1FF9E4B2D134AEE0063DF29 /* SHCloudWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHCloudWorker.swift; sourceTree = "<group>"; };
 		F1FF9E5E2D135F740063DF29 /* Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1FF9E6C2D135F7F0063DF29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F1FF9E6E2D135F7F0063DF29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		F1FF9E3C2D134AEE0063DF29 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				F1FF9E3B2D134AEE0063DF29 /* SDKCloudConfiguration.swift */,
+				F1FF9E3B2D134AEE0063DF29 /* SHCloudConfiguration.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 		F1FF9E402D134AEE0063DF29 /* Error */ = {
 			isa = PBXGroup;
 			children = (
-				F1FF9E3D2D134AEE0063DF29 /* ApiError.swift */,
+				F1FF9E3D2D134AEE0063DF29 /* SHCloudError.swift */,
 				F1FF9E3E2D134AEE0063DF29 /* Error+extensions.swift */,
-				F1FF9E3F2D134AEE0063DF29 /* HttpErrorResponse.swift */,
+				F1FF9E3F2D134AEE0063DF29 /* SHCloudErrorResponse.swift */,
 			);
 			path = Error;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 		F1FF9E422D134AEE0063DF29 /* Params */ = {
 			isa = PBXGroup;
 			children = (
-				F1FF9E412D134AEE0063DF29 /* ApiParams.swift */,
+				F1FF9E412D134AEE0063DF29 /* SHCloudParams.swift */,
 			);
 			path = Params;
 			sourceTree = "<group>";
@@ -169,9 +169,9 @@
 		F1FF9E462D134AEE0063DF29 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				F1FF9E432D134AEE0063DF29 /* ApiEmptyRequest.swift */,
-				F1FF9E442D134AEE0063DF29 /* ApiRequest.swift */,
-				F1FF9E452D134AEE0063DF29 /* HTTPMethod.swift */,
+				F1FF9E432D134AEE0063DF29 /* SHCloudEmptyRequest.swift */,
+				F1FF9E442D134AEE0063DF29 /* SHCloudRequest.swift */,
+				F1FF9E452D134AEE0063DF29 /* SHCloudHTTPMethod.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -179,7 +179,7 @@
 		F1FF9E482D134AEE0063DF29 /* Response */ = {
 			isa = PBXGroup;
 			children = (
-				F1FF9E472D134AEE0063DF29 /* ApiEmptyResponse.swift */,
+				F1FF9E472D134AEE0063DF29 /* SHCloundEmptyResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -198,8 +198,8 @@
 		F1FF9E4C2D134AEE0063DF29 /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				F1FF9E4A2D134AEE0063DF29 /* ApiProvider.swift */,
-				F1FF9E4B2D134AEE0063DF29 /* ApiWorker.swift */,
+				F1FF9E4A2D134AEE0063DF29 /* SHCloudProvider.swift */,
+				F1FF9E4B2D134AEE0063DF29 /* SHCloudWorker.swift */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -359,17 +359,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1FF9E4E2D134AEE0063DF29 /* CloudConstants.swift in Sources */,
-				F1FF9E4F2D134AEE0063DF29 /* SDKCloudConfiguration.swift in Sources */,
-				F1FF9E502D134AEE0063DF29 /* ApiError.swift in Sources */,
+				F1FF9E4F2D134AEE0063DF29 /* SHCloudConfiguration.swift in Sources */,
+				F1FF9E502D134AEE0063DF29 /* SHCloudError.swift in Sources */,
 				F1FF9E512D134AEE0063DF29 /* Error+extensions.swift in Sources */,
-				F1FF9E522D134AEE0063DF29 /* HttpErrorResponse.swift in Sources */,
-				F1FF9E532D134AEE0063DF29 /* ApiParams.swift in Sources */,
-				F1FF9E542D134AEE0063DF29 /* ApiEmptyRequest.swift in Sources */,
-				F1FF9E552D134AEE0063DF29 /* ApiRequest.swift in Sources */,
-				F1FF9E562D134AEE0063DF29 /* HTTPMethod.swift in Sources */,
-				F1FF9E572D134AEE0063DF29 /* ApiEmptyResponse.swift in Sources */,
-				F1FF9E582D134AEE0063DF29 /* ApiProvider.swift in Sources */,
-				F1FF9E592D134AEE0063DF29 /* ApiWorker.swift in Sources */,
+				F1FF9E522D134AEE0063DF29 /* SHCloudErrorResponse.swift in Sources */,
+				F1FF9E532D134AEE0063DF29 /* SHCloudParams.swift in Sources */,
+				F1FF9E542D134AEE0063DF29 /* SHCloudEmptyRequest.swift in Sources */,
+				F1FF9E552D134AEE0063DF29 /* SHCloudRequest.swift in Sources */,
+				F1FF9E562D134AEE0063DF29 /* SHCloudHTTPMethod.swift in Sources */,
+				F1FF9E572D134AEE0063DF29 /* SHCloundEmptyResponse.swift in Sources */,
+				F1FF9E582D134AEE0063DF29 /* SHCloudProvider.swift in Sources */,
+				F1FF9E592D134AEE0063DF29 /* SHCloudWorker.swift in Sources */,
 				F1FF9E382D134AEB0063DF29 /* SharpnezCloud.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
