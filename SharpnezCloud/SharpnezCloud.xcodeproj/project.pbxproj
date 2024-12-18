@@ -1,0 +1,499 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F1FF9E372D134AEB0063DF29 /* SharpnezCloud.h in Headers */ = {isa = PBXBuildFile; fileRef = F1FF9E342D134AEB0063DF29 /* SharpnezCloud.h */; };
+		F1FF9E382D134AEB0063DF29 /* SharpnezCloud.docc in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E352D134AEB0063DF29 /* SharpnezCloud.docc */; };
+		F1FF9E4E2D134AEE0063DF29 /* CloudConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E392D134AEE0063DF29 /* CloudConstants.swift */; };
+		F1FF9E4F2D134AEE0063DF29 /* SDKCloudConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3B2D134AEE0063DF29 /* SDKCloudConfiguration.swift */; };
+		F1FF9E502D134AEE0063DF29 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3D2D134AEE0063DF29 /* ApiError.swift */; };
+		F1FF9E512D134AEE0063DF29 /* Error+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3E2D134AEE0063DF29 /* Error+extensions.swift */; };
+		F1FF9E522D134AEE0063DF29 /* HttpErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E3F2D134AEE0063DF29 /* HttpErrorResponse.swift */; };
+		F1FF9E532D134AEE0063DF29 /* ApiParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E412D134AEE0063DF29 /* ApiParams.swift */; };
+		F1FF9E542D134AEE0063DF29 /* ApiEmptyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E432D134AEE0063DF29 /* ApiEmptyRequest.swift */; };
+		F1FF9E552D134AEE0063DF29 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E442D134AEE0063DF29 /* ApiRequest.swift */; };
+		F1FF9E562D134AEE0063DF29 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E452D134AEE0063DF29 /* HTTPMethod.swift */; };
+		F1FF9E572D134AEE0063DF29 /* ApiEmptyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E472D134AEE0063DF29 /* ApiEmptyResponse.swift */; };
+		F1FF9E582D134AEE0063DF29 /* ApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E4A2D134AEE0063DF29 /* ApiProvider.swift */; };
+		F1FF9E592D134AEE0063DF29 /* ApiWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF9E4B2D134AEE0063DF29 /* ApiWorker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F1FF9DFC2D134A4F0063DF29 /* SharpnezCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SharpnezCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1FF9E342D134AEB0063DF29 /* SharpnezCloud.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SharpnezCloud.h; sourceTree = "<group>"; };
+		F1FF9E352D134AEB0063DF29 /* SharpnezCloud.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SharpnezCloud.docc; sourceTree = "<group>"; };
+		F1FF9E392D134AEE0063DF29 /* CloudConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudConstants.swift; sourceTree = "<group>"; };
+		F1FF9E3B2D134AEE0063DF29 /* SDKCloudConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDKCloudConfiguration.swift; sourceTree = "<group>"; };
+		F1FF9E3D2D134AEE0063DF29 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		F1FF9E3E2D134AEE0063DF29 /* Error+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error+extensions.swift"; sourceTree = "<group>"; };
+		F1FF9E3F2D134AEE0063DF29 /* HttpErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpErrorResponse.swift; sourceTree = "<group>"; };
+		F1FF9E412D134AEE0063DF29 /* ApiParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiParams.swift; sourceTree = "<group>"; };
+		F1FF9E432D134AEE0063DF29 /* ApiEmptyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEmptyRequest.swift; sourceTree = "<group>"; };
+		F1FF9E442D134AEE0063DF29 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		F1FF9E452D134AEE0063DF29 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		F1FF9E472D134AEE0063DF29 /* ApiEmptyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEmptyResponse.swift; sourceTree = "<group>"; };
+		F1FF9E4A2D134AEE0063DF29 /* ApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiProvider.swift; sourceTree = "<group>"; };
+		F1FF9E4B2D134AEE0063DF29 /* ApiWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiWorker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1FF9DF92D134A4F0063DF29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F1FF9DF22D134A4F0063DF29 = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E0B2D134A5C0063DF29 /* SharpnezCloud */,
+				F1FF9DFD2D134A4F0063DF29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F1FF9DFD2D134A4F0063DF29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9DFC2D134A4F0063DF29 /* SharpnezCloud.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1FF9E0B2D134A5C0063DF29 /* SharpnezCloud */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E362D134AEB0063DF29 /* Resources */,
+				F1FF9E4D2D134AEE0063DF29 /* Source */,
+			);
+			path = SharpnezCloud;
+			sourceTree = "<group>";
+		};
+		F1FF9E362D134AEB0063DF29 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E342D134AEB0063DF29 /* SharpnezCloud.h */,
+				F1FF9E352D134AEB0063DF29 /* SharpnezCloud.docc */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F1FF9E3A2D134AEE0063DF29 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E392D134AEE0063DF29 /* CloudConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F1FF9E3C2D134AEE0063DF29 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E3B2D134AEE0063DF29 /* SDKCloudConfiguration.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F1FF9E402D134AEE0063DF29 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E3D2D134AEE0063DF29 /* ApiError.swift */,
+				F1FF9E3E2D134AEE0063DF29 /* Error+extensions.swift */,
+				F1FF9E3F2D134AEE0063DF29 /* HttpErrorResponse.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		F1FF9E422D134AEE0063DF29 /* Params */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E412D134AEE0063DF29 /* ApiParams.swift */,
+			);
+			path = Params;
+			sourceTree = "<group>";
+		};
+		F1FF9E462D134AEE0063DF29 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E432D134AEE0063DF29 /* ApiEmptyRequest.swift */,
+				F1FF9E442D134AEE0063DF29 /* ApiRequest.swift */,
+				F1FF9E452D134AEE0063DF29 /* HTTPMethod.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		F1FF9E482D134AEE0063DF29 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E472D134AEE0063DF29 /* ApiEmptyResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		F1FF9E492D134AEE0063DF29 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E402D134AEE0063DF29 /* Error */,
+				F1FF9E422D134AEE0063DF29 /* Params */,
+				F1FF9E462D134AEE0063DF29 /* Request */,
+				F1FF9E482D134AEE0063DF29 /* Response */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F1FF9E4C2D134AEE0063DF29 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E4A2D134AEE0063DF29 /* ApiProvider.swift */,
+				F1FF9E4B2D134AEE0063DF29 /* ApiWorker.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F1FF9E4D2D134AEE0063DF29 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				F1FF9E3A2D134AEE0063DF29 /* Constants */,
+				F1FF9E3C2D134AEE0063DF29 /* Core */,
+				F1FF9E492D134AEE0063DF29 /* Models */,
+				F1FF9E4C2D134AEE0063DF29 /* Provider */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F1FF9DF72D134A4F0063DF29 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FF9E372D134AEB0063DF29 /* SharpnezCloud.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F1FF9DFB2D134A4F0063DF29 /* SharpnezCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1FF9E042D134A4F0063DF29 /* Build configuration list for PBXNativeTarget "SharpnezCloud" */;
+			buildPhases = (
+				F1FF9DF72D134A4F0063DF29 /* Headers */,
+				F1FF9DF82D134A4F0063DF29 /* Sources */,
+				F1FF9DF92D134A4F0063DF29 /* Frameworks */,
+				F1FF9DFA2D134A4F0063DF29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharpnezCloud;
+			packageProductDependencies = (
+			);
+			productName = SharpnezCloud;
+			productReference = F1FF9DFC2D134A4F0063DF29 /* SharpnezCloud.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1FF9DF32D134A4F0063DF29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					F1FF9DFB2D134A4F0063DF29 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = F1FF9DF62D134A4F0063DF29 /* Build configuration list for PBXProject "SharpnezCloud" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1FF9DF22D134A4F0063DF29;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F1FF9DFD2D134A4F0063DF29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1FF9DFB2D134A4F0063DF29 /* SharpnezCloud */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1FF9DFA2D134A4F0063DF29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1FF9DF82D134A4F0063DF29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1FF9E4E2D134AEE0063DF29 /* CloudConstants.swift in Sources */,
+				F1FF9E4F2D134AEE0063DF29 /* SDKCloudConfiguration.swift in Sources */,
+				F1FF9E502D134AEE0063DF29 /* ApiError.swift in Sources */,
+				F1FF9E512D134AEE0063DF29 /* Error+extensions.swift in Sources */,
+				F1FF9E522D134AEE0063DF29 /* HttpErrorResponse.swift in Sources */,
+				F1FF9E532D134AEE0063DF29 /* ApiParams.swift in Sources */,
+				F1FF9E542D134AEE0063DF29 /* ApiEmptyRequest.swift in Sources */,
+				F1FF9E552D134AEE0063DF29 /* ApiRequest.swift in Sources */,
+				F1FF9E562D134AEE0063DF29 /* HTTPMethod.swift in Sources */,
+				F1FF9E572D134AEE0063DF29 /* ApiEmptyResponse.swift in Sources */,
+				F1FF9E582D134AEE0063DF29 /* ApiProvider.swift in Sources */,
+				F1FF9E592D134AEE0063DF29 /* ApiWorker.swift in Sources */,
+				F1FF9E382D134AEB0063DF29 /* SharpnezCloud.docc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F1FF9E052D134A4F0063DF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = tiagolinhares.SharpnezCloud;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		F1FF9E062D134A4F0063DF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.1;
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = tiagolinhares.SharpnezCloud;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = auto;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		F1FF9E072D134A4F0063DF29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1FF9E082D134A4F0063DF29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1FF9DF62D134A4F0063DF29 /* Build configuration list for PBXProject "SharpnezCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FF9E072D134A4F0063DF29 /* Debug */,
+				F1FF9E082D134A4F0063DF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1FF9E042D134A4F0063DF29 /* Build configuration list for PBXNativeTarget "SharpnezCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1FF9E052D134A4F0063DF29 /* Debug */,
+				F1FF9E062D134A4F0063DF29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1FF9DF32D134A4F0063DF29 /* Project object */;
+}
