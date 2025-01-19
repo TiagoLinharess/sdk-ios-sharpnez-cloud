@@ -10,7 +10,7 @@ import Foundation
 // MARK: - SHCloudWorkerProvider
 
 /// Worker Protocol.
-public protocol SHCloudWorkerProvider {
+public protocol SHCloudWorkerProtocol {
     
     // MARK: - Protocol Mehtods
     
@@ -43,7 +43,7 @@ public final class SHCloudWorker: NSObject {
     }
 }
 
-extension SHCloudWorker: SHCloudWorkerProvider {
+extension SHCloudWorker: SHCloudWorkerProtocol {
     
     // MARK: - Request
     
