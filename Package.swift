@@ -20,6 +20,10 @@ let package = Package(
             sources: ["Source"],
             resources: [
                 .process("Resources")
+            ],
+            swiftSettings: [
+                .define("ENABLE_LIBRARY_EVOLUTION", .when(configuration: .release)),
+                .unsafeFlags(["-enable-library-evolution", "-emit-module-interface"])
             ]
         )
     ]
