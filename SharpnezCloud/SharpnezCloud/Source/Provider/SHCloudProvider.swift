@@ -32,6 +32,7 @@ extension SHCloudProvider: SHCloudProviderProtocol {
     // MARK: - Provider Request
     
     /// Perform HTTP request provider.
+    @MainActor
     public func callMethod(request: SHCloudRequestProtocol) async throws -> Data {
         let urlRequest = try getURL(request: request)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
@@ -53,6 +54,7 @@ private extension SHCloudProvider {
     // MARK: - Build URL
     
     /// Get URL request
+    @MainActor
     func getURL(request: SHCloudRequestProtocol) throws -> URLRequest {
         guard let urlString = SHCloudConfiguration.shared?.getBaseURL(),
               let url = URL(string: urlString + request.endpoint)

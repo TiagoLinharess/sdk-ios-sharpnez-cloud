@@ -15,6 +15,7 @@ public final class SHCloudConfiguration: NSObject {
     // MARK: - Properties
     
     /// SHCloud Singleton.
+    @MainActor
     public static var shared: SHCloudConfiguration?
     
     /// This property is used to create the URL for request.
@@ -25,6 +26,7 @@ public final class SHCloudConfiguration: NSObject {
     // MARK: - Start
     
     /// Start Singleton Method
+    @MainActor
     public class func start(baseURL: String) {
         shared = SHCloudConfiguration()
         shared?.baseURL = baseURL

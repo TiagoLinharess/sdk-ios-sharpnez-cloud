@@ -10,7 +10,7 @@ import Foundation
 // MARK: - SHCloudRequestProtocol
 
 /// SHCloudRequest protocol.
-public protocol SHCloudRequestProtocol {
+public protocol SHCloudRequestProtocol: Sendable {
     
     // MARK: - Protocol Properties
     

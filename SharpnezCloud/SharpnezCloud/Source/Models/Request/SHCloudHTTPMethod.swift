@@ -10,7 +10,7 @@ import Foundation
 // MARK: - SHCloudHTTPMethod
 
 /// HTTP Methods.
-public enum SHCloudHTTPMethod: String {
+public enum SHCloudHTTPMethod: String, Sendable {
     
     /// GET Method.
     case get = "GET"
