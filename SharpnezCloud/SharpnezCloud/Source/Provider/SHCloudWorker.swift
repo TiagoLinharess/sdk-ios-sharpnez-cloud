@@ -10,7 +10,7 @@ import Foundation
 // MARK: - SHCloudWorkerProvider
 
 /// Worker Protocol.
-public protocol SHCloudWorkerProtocol {
+public protocol SHCloudWorkerProtocol: Sendable {
     
     // MARK: - Protocol Mehtods
     

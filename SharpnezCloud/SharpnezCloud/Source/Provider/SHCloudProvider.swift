@@ -10,7 +10,7 @@ import Foundation
 // MARK: - SHCloudProviderProtocol
 
 /// SHCloudProvider Protocol.
-public protocol SHCloudProviderProtocol {
+public protocol SHCloudProviderProtocol: Sendable {
     
     /// Perform HTTP request provider.
     func callMethod(request: SHCloudRequestProtocol) async throws -> Data
